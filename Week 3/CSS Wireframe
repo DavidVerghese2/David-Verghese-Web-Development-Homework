@@ -8,32 +8,114 @@
     <title> How To Make Nasi Lemak! </title>
 
     <style type="text/css">
+    
+    .one {
 
-    div.one {
-
-      font-size: 0;
+      font-size: 20px;
+      margin-top: 100px;
 
     }
 
-    div.two {
+    #flag {
 
-      font-size: 10;
+      float: left;
+    }
+
+    .two {
+
+      font-size: 10px;
+       font-family: "Verdana", sans-serif; 
+      float: left;
+      margin-right: 100px;
+      margin-left: 100px;
+      background-color: #DEC318;
+      padding: 20px;
+    }
+
+    .three {
+
+      float: right;
+      margin-right: 200px;
+      font-size: 12px;
+       font-family: "Verdana", sans-serif; 
+       padding: 20px;
+
+      background-color: #DEC318;
+    }
+
+    .search {
+
+    /* "<!--" is for html, "/*" is for css, 
+        This is how you move an object to the left
+        You make the left margin bigger
+
+    */
+      margin-left: 500px;
+    }
+
+    .button {
+      margin-left: 500px;
+
+    }
+
+    .description {
+      width:700px;
+      font-size: 22px;
+      margin-top: 200px;
+      float: right;
+      background-color: #DEC318;
+       padding: 50px;
+    
+    }
+
+    #food {
+
+      display:inline;
+      margin-top: 100px;
+      margin-bottom: 100px;
+      margin-left: 10px;
+      height: 400px;
+      width: 600px;
+    }
+
+    header {
+
+      font-family: "Georgia", sans-serif;
+    }
+
+    footer {
+
+      margin-top: 500px;
+      font-size: 15px;
+    }
+
+    nav {
+
+      float: right;
     }
 
     </style>
 
+
 </head>
 
+
+<header>
+
+<img id="flag" src="http://www.bbk.ac.uk/events-calendar/images/malaysian-100x100.jpg"/>
 
 <nav>
 
 
-	<img src="http://www.bbk.ac.uk/events-calendar/images/malaysian-100x100.jpg"/>
+	
 
-<!-- This didn't work initially when I copied and pasted cuz the font was different. If something's not working trying writing it out by hand -->
    <a href="http://allrecipes.com">Home</a>
    <a href="http://allrecipes.com/recipes">Recipes</a>
    <a href="http://allrecipes.com/recipes/86/world-cuisine">World Cuisine</a>
+
+</nav>
+
+<div class = "search">
 
    <form action="login.php" method="POST" name="sampleForm">
     <label for="Search"> Search: </label>
@@ -42,26 +124,42 @@
 
    </form>
 
-</nav>
+</div>
 
-
+  <div class = "button">
  <input type="button" value="Submit" name="submit-profile">
+ </div>
+
+</header>
+
 
  <body> 
 
  <div class="one"> 
 
  <h1>Nasi Lemak Recipe (based on <a href="http://allrecipes.com/recipe/78938/malaysian-nasi-lemak/">this website</a>) </h1> 
- <img src="http://images.media-allrecipes.com/userphotos/560x315/37925.jpg"/>
- <p> Recipe by Tuty Jek</p>
-
- <p> <br>"Delicious Malaysian coconut rice, served with anchovy hot chile sauce, <br> fried anchovies, fried peanut, sliced cucumber or tomato and hard-boiled egg. <br> If you do not have tamarind juice, substitute with same amount of lemon juice." </p>
-
+ 
+ 
  <hr>
 
 </div>
 
-<div class="two">
+
+<img id = "food" src="http://images.media-allrecipes.com/userphotos/560x315/37925.jpg"/>
+<div class = "description">
+ <p> Recipe by Tuty Jek</p>
+
+ <p> <br>"Delicious Malaysian coconut rice, served with anchovy hot chile sauce, <br> fried anchovies, fried peanut, sliced cucumber or tomato and hard-boiled egg. <br> If you do not have tamarind juice, substitute with same amount of lemon juice." </p>
+
+ </div>
+
+ <hr>
+
+ <div class="two">
+
+
+
+
 
  <h3> Ingredients</h3>
 
@@ -104,7 +202,10 @@
 
 </div>
 
-<hr>
+
+
+<div class = "three">
+
 
  <h3> Directions</h3>
 
@@ -117,11 +218,18 @@
  <li>Serve the onion and garlic sauce over the warm rice, and top with peanuts, <br>fried anchovies, cucumbers, and eggs.</li>
 </ol>
 
-<hr>
+</div>
 
+
+
+<footer>
+
+<hr>
 <a href="#top">Back to Top</a>
+</footer>
+
+
 
  </body>
 
 </html>
-
