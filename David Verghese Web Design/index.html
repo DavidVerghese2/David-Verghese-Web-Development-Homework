@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--charset attribute specifies the character encoding for the html doc  -->
+    <meta charset="UTF-8">
+    <!-- The title tag is required and shows up in the browser tab and search engine results -->
+    <title> Rigipedia </title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <style type="text/css">
+
+    nav {
+
+        color: #ffffff ;
+    }
+html {
+        background: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRsaAkJgEKMrmFnisqrVVPIFGOni79ke2jAow13B9CxtqwC80MGEg)
+    }
+
+    main {
+
+        color: #ffffff ; 
+    }
+
+    footer {
+
+        color: #ffffff ;
+    }
+
+    
+    #jimi {
+        height: 200px;
+        width: 200px;
+        margin-top: 50px;
+    }
+    
+    #jimmy {
+        height: 200px;
+        width: 200px;
+        margin-top: 50px;
+    }
+    
+     #mark {
+        height: 200px;
+        width: 200px;
+        margin-top: 50px;
+    } 
+    
+    #kurt {
+        height: 200px;
+        width: 200px;
+        margin-top: 50px;
+    }
+    
+    #also {
+        height: 200px;
+        width: 200px;
+
+    }
+    
+    div {
+        display: inline-block;
+    }
+
+    
+    div.Jimi_Hendrix {
+        background: url(http://i.imgur.com/WzT3Ejw.jpg);
+        height: 250px;
+        width: 250px;
+        padding: 50px;
+        background-color: #888;
+        margin-right: 50px;
+        /* width: 100%;
+        height: auto; */
+        border: 10px solid #FEF9EF;
+        border-bottom: 15px solid #FEF9EF;
+        /*h-shadow v-shadow | blur spread color*/
+        -webkit-box-shadow: 3px 3px 3px 3px rgba(10, 10, 10, 0.5);
+        -moz-box-shadow: 3px 3px 3px 3px rgba(10, 10, 10, 0.5);
+        box-shadow: 3px 3px 3px 3px rgba(10, 10, 10, 0.5);
+    }
+
+
+    
+    div.Jimi_HendrixButton {
+        height: 25px;
+        width: 200px;
+        background-color: #D3D3D3;
+        text-align: center;
+    }
+    
+    div.Jimmy_Page {
+        background: url(http://i.imgur.com/WzT3Ejw.jpg);
+        height: 250px;
+        width: 250px;
+        padding: 50px;
+        background-color: #888;
+        margin-right: 50px;
+        border: 10px solid #FEF9EF;
+        border-bottom: 15px solid #FEF9EF;
+        /*h-shadow v-shadow | blur spread color*/
+        -webkit-box-shadow: 3px 3px 3px 3px rgba(10, 10, 10, 0.5);
+        -moz-box-shadow: 3px 3px 3px 3px rgba(10, 10, 10, 0.5);
+        box-shadow: 3px 3px 3px 3px rgba(10, 10, 10, 0.5);
+    }
+    
+    div.Jimmy_PageButton {
+        height: 25px;
+        width: 200px;
+        background-color: #D3D3D3;
+        text-align: center;
+    }
+    
+    div.Mark_Knopfler {
+        background: url(http://i.imgur.com/WzT3Ejw.jpg);
+        height: 250px;
+        width: 250px;
+        padding: 50px;
+        background-color: #888;
+        margin-right: 50px;
+        border: 10px solid #FEF9EF;
+        border-bottom: 15px solid #FEF9EF;
+        /*h-shadow v-shadow | blur spread color*/
+        -webkit-box-shadow: 3px 3px 3px 3px rgba(10, 10, 10, 0.5);
+        -moz-box-shadow: 3px 3px 3px 3px rgba(10, 10, 10, 0.5);
+        box-shadow: 3px 3px 3px 3px rgba(10, 10, 10, 0.5);
+    }
+    
+    div.Mark_KnopflerButton {
+        height: 25px;
+        width: 200px;
+        background-color: #D3D3D3;
+        text-align: center;
+    }
+    
+    div.Kurt_Cobain {
+        background: url(http://i.imgur.com/WzT3Ejw.jpg);
+        height: 250px;
+        width: 250px;
+        padding: 50px;
+        background-color: #888;
+        margin-top: 50px;
+        margin-right: 50px;
+        margin-bottom: 50px;
+        border: 10px solid #FEF9EF;
+        border-bottom: 15px solid #FEF9EF;
+        /*h-shadow v-shadow | blur spread color*/
+        -webkit-box-shadow: 3px 3px 3px 3px rgba(10, 10, 10, 0.5);
+        -moz-box-shadow: 3px 3px 3px 3px rgba(10, 10, 10, 0.5);
+        box-shadow: 3px 3px 3px 3px rgba(10, 10, 10, 0.5);
+    }
+    
+    div.Kurt_CobainButton {
+        height: 25px;
+        width: 200px;
+        background-color: #D3D3D3;
+        text-align: center;
+    }
+    
+    .rotY {
+        transform: rotate(0deg);
+        /*apply transitions to the base state*/
+        transition: all 3s ease;
+    }
+    
+    .rotY:hover {
+        transform: rotate(-50deg);
+    }
+    
+    #fender {
+        height: 200px;
+        width: 500px;
+    }
+    
+    #gibson {
+        height: 200px;
+        width: 500px;
+    }
+    
+    #prs {
+        height: 200px;
+        width: 500px;
+    }
+    
+    div.FenderBrand {
+        height: 250px;
+        width: 500px;
+        padding: 50px;
+        background: url(https://images6.alphacoders.com/379/379569.png);
+        margin-right: 50px;
+        border: 10px solid #FEF9EF;
+        border-bottom: 15px solid #FEF9EF;
+        /*h-shadow v-shadow | blur spread color*/
+        -webkit-box-shadow: 3px 3px 3px 3px rgba(10, 10, 10, 0.5);
+        -moz-box-shadow: 3px 3px 3px 3px rgba(10, 10, 10, 0.5);
+        box-shadow: 3px 3px 3px 3px rgba(10, 10, 10, 0.5);
+    }
+    
+    div.FenderButton {
+        height: 25px;
+        width: 500px;
+        background-color: #D3D3D3;
+        text-align: center;
+    }
+    
+    div.GibsonBrand {
+        height: 250px;
+        width: 500px;
+        padding: 50px;
+        background: url(https://images6.alphacoders.com/379/379569.png);
+        margin-right: 50px;
+        border: 10px solid #FEF9EF;
+        border-bottom: 15px solid #FEF9EF;
+        /*h-shadow v-shadow | blur spread color*/
+        -webkit-box-shadow: 3px 3px 3px 3px rgba(10, 10, 10, 0.5);
+        -moz-box-shadow: 3px 3px 3px 3px rgba(10, 10, 10, 0.5);
+        box-shadow: 3px 3px 3px 3px rgba(10, 10, 10, 0.5);
+    }
+    
+    div.GibsonButton {
+        height: 25px;
+        width: 500px;
+        background-color: #D3D3D3;
+        text-align: center;
+    }
+    
+    div.Paul_Reed_Smith {
+        height: 250px;
+        width: 500px;
+        padding: 50px;
+        background: url(https://images6.alphacoders.com/379/379569.png);
+        margin-right: 50px;
+        margin-top: 50px;
+        border: 10px solid #FEF9EF;
+        border-bottom: 15px solid #FEF9EF;
+        /*h-shadow v-shadow | blur spread color*/
+        -webkit-box-shadow: 3px 3px 3px 3px rgba(10, 10, 10, 0.5);
+        -moz-box-shadow: 3px 3px 3px 3px rgba(10, 10, 10, 0.5);
+        box-shadow: 3px 3px 3px 3px rgba(10, 10, 10, 0.5);
+    }
+    
+    div.PRSButton {
+        height: 25px;
+        width: 500px;
+        background-color: #D3D3D3;
+        text-align: center;
+    }
+    
+    ul {
+        /* remove the bullet points */
+        list-style-type: none;
+        /*overflow: hidden; */
+        background-color: #999;
+    }
+    
+    li {
+        /* float first and thenwe will switch to inline */
+        /* float: left; */
+        /* use inline */
+        display: inline-block;
+    }
+    
+    li a {
+        /* anchor tags by default display inline, here we are telling them to behave like a block element. Making the anchor block and adding dimensions padding we get a bigger clickable area for the user to select*/
+        display: block;
+        text-align: center;
+        width: 100px;
+        padding: 10px;
+        /* remove that ugly underline and color */
+        color: #333;
+        text-decoration: none;
+    }
+    
+    li a:hover {
+        background-color: #111;
+        color: white;
+    }
+    
+    li a.active {
+        background-color: #888;
+    }
+}
+    </style>
+</head>
+<nav>
+    <h1> Welcome to Rigipedia! </h1>
+    <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+</nav>
+<main>
+
+    <body>
+
+        <h2> Guitarists </h2>
+
+        <div class="Jimi_Hendrix">
+            <img id="jimi" src="http://www.thenational.ae/storyimage/AB/20140918/ARTICLE/140919042/AR/0/&NCS_modified=20140918151059&MaxW=640&imageVersion=default&AR-140919042.jpg" />
+            <div class="Jimi_HendrixButton">
+                <a href="Jimi2.html"> Jimi Hendrix</a>
+            </div>
+        </div>
+
+        <div class="Kurt_Cobain">
+            <img id="kurt" src="http://www.billboard.com/files/styles/article_main_image/public/media/kurt-cobain-mtv-unplugged-650.jpg" />
+            <div class="Kurt_CobainButton">
+                <a href="Kurt2.html"> Kurt Cobain </a>
+            </div>
+        </div>
+        <div class="Jimmy_Page">
+            <img id="jimmy" src="http://kingofwallpapers.com/jimmy-page/jimmy-page-017.jpg" />
+            <div class="Jimmy_PageButton">
+                <a href="#"> Jimmy Page </a>
+            </div>
+        </div>
+
+         <div class="Mark_Knopfler">
+            <img id="mark" src="http://gobeweekly.com/images/events/markknopfler_gobeweekly_entertainment_niagara.jpg" />
+            <div class="Mark_KnopflerButton">
+                <a href=#> Mark Knopfler </a>
+            </div>
+        </div>
+       
+        
+        <hr> 
+        <h2> Brands </h2>
+        <div class="FenderBrand">
+            <img id="fender" src="http://www.cqsisu.com/data/wallpapers/16/756854.png" />
+            <div class="FenderButton">
+                <a href="Fender.html"> Fender </a>
+            </div>
+        </div>
+        <div class="GibsonBrand">
+            <img id="gibson" src="http://creative.bauermedia.co.uk/gibson/images/gibson-brands.jpg" />
+            <div class="GibsonButton">
+                <a href="Gibson.html"> Gibson </a>
+            </div>
+        </div>
+        <div class="Paul_Reed_Smith">
+            <img id="prs" src="https://www.premierguitar.com/ext/resources/images/content/2015_06/LNU/Jun15_LNU_PRS_mccarty_WEB.jpg" />
+            <div class="PRSButton">
+                <a href="#"> Paul Reed Smith </a>
+            </div>
+        
+</body>
+</main>
+
+<footer>
+
+<hr>
+<a href="#top">Back to Top</a>
+</footer>
+
+
+</html>
